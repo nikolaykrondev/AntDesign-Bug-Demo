@@ -1,0 +1,17 @@
+@page "/"
+
+@if (TestDataDataSource == null)
+{
+    <Paragraph><em>Loading...</em></Paragraph>
+}
+else
+{
+    <Table @ref="_table"
+           DataSource="@TestDataDataSource"
+           @bind-SelectedRows="_selectedRows"
+           >
+        <Selection Key="@(context.Id.ToString())"/>
+        <Column @bind-Field="@context.Id" Sortable Filterable/>
+        <Column Title="Name" @bind-Field="@context.Name" Sortable Filters="_nameFilter"/>
+    </Table>
+}

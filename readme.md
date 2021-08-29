@@ -12,3 +12,6 @@
 * navigate to `localhost:5001`
 * try to filter by name and click OK
 * table is filtered without any additional interaction
+
+## Bug is fixed in v `0.9.3`
+by [issue 1874](https://github.com/ant-design-blazor/ant-design-blazor/issues/1874) and [PR 1875](https://github.com/ant-design-blazor/ant-design-blazor/pull/1875)
